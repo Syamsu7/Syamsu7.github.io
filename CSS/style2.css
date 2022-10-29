@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: courier;
+}
+.border{
+    padding: 20px;
+    background-color: rgb(186, 233, 205);
+}
+.head{
+    float: center;
+    padding: 50px;
+    color: white;
+    background-color: grey; 
+    text-align: center;
+}
+.head button{
+    display: inline-block;
+    background-color: white;
+    border: 9px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+}  
+.head button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+    color: black;
+}
+.head button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2px;
+    transition: 4s;
+}
+.head button:hover {
+    background-color: grey;
+}
+.head button:hover span {
+    padding-right: 25px;
+}
+.head button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.container{
+    text-align: center;
+    padding: 0 px;
+    margin: 30px;
+
+}
+footer {
+    padding: 60px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+.head2 button{
+    display: inline-block;
+    background-color: white;
+    border: 9px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 3px;
+}  
+.head2 button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+    color: black;
+}
+.head2 button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2px;
+    transition: 4s;
+}
+.head2 button:hover {
+    background-color: grey;
+}
+.head2 button:hover span {
+    padding-right: 25px;
+}
+.head2 button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.container2{
+    margin: responsive;
+    margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.box1{
+    width: center;
+    margin: 40px;
+    transition: 0.5s;
+}
+.box {
+	text-align: center;
+	padding: 80px;
+    color: black;
+}
+#box2{
+    width: center;
+    margin: 20px;
+    transition: 0.5s;
+}
+#box2:hover{
+    transform: scale(2.05);
+    z-index: 1;
+}
+@media screen and (max-width: 580px){
+	.border{
+        padding: 0px;
+    }
+    .box{
+        padding: 10px;
+    }
+    #box2{
+        width: center;
+        margin: 5px;
+        transition: 0.5s;
+    }
+    #box2:hover{
+        transform: scale(1.15);
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 380px){
+	#box2{
+        width: 150px;
+        height: 150px;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 281px){
+    .head{
+        padding: 10px;
+    }
+}
